@@ -4,7 +4,7 @@
 To commemorate Jetpack Compose first beta release, Google launched the [#AndroidDevChallenge](https://developer.android.com/dev-challenge). In the 2nd round, contestants were asked to create a simple countdown app and, the idea to create a kitchen timer, popped in my head.
 By then, I didn't had the time to accomplish it in one week, so I submitted a [simpler one](https://github.com/GuilhE/OneHotMinute-Compose), but now that I have it, this is the result 😊
 
-I've wrote a Medium post explaining the process and you can read it here [Compose, Camera and Canvas.]()
+I've wrote a Medium post explaining the process and you can read it here [Compose, Camera and Canvas.](https://guidelgado.medium.com/compose-camera-and-canvas-87b8cfed8cda)
 
 <img src="/media/tomato.gif" width="260"> <img src="/media/orange.gif" width="260"> <img src="/media/lemon.gif" width="260">
 
