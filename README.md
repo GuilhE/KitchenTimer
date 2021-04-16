@@ -8,6 +8,8 @@ I've wrote a Medium post explaining the process and you can read it here [Compos
 
 <img src="/media/tomato.gif" width="260"> <img src="/media/orange.gif" width="260"> <img src="/media/lemon.gif" width="260">
 
+<a href='https://play.google.com/store/apps/details?id=com.github.guilhe.compose.kitchentimer'><img width="30%" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
  ## LICENSE
 
 Copyright (c) 2021-present GuilhE
