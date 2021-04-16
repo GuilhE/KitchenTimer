@@ -101,6 +101,7 @@ private fun Tomato(onSet: () -> Unit, onTick: () -> Unit, onRing: () -> Unit) {
                         newMillis = currentTime
                         scope.launch {
                             isSettingTime = tryAwaitRelease()
+                            enableSounds = !isSettingTime
                         }
                     }
                 )
