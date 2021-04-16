@@ -44,7 +44,6 @@ import kotlinx.coroutines.yield
 // +z
 
 private const val SECONDS = 60
-private const val SECONDS_LEFT = SECONDS * 1000L //*60
 private const val GLOBE_RADIUS_FACTOR = 1.05f
 private const val FIELD_OF_VIEW_FACTOR = .7f
 private const val TWO_PI = Math.PI.toFloat() * 2
@@ -80,6 +79,7 @@ fun KitchenTimer(
     colors: TimerColors = defaultColors(),
     isSettingTime: Boolean,
     onTick: (millisLeft: Long) -> Unit,
+    onMinuteMode: Boolean = true,
     debugMode: Boolean = false
 ) {
     var job: Job? = null
@@ -103,15 +103,16 @@ fun KitchenTimer(
     }
     val scope = rememberCoroutineScope()
 
+    val secondsLeft = SECONDS * 1000L * if (onMinuteMode) 1 else 60
     var lastMillis by rememberSaveable { mutableStateOf(System.currentTimeMillis()) }
-    var millisLeft by rememberSaveable { mutableStateOf(SECONDS_LEFT) }
+    var millisLeft by rememberSaveable { mutableStateOf(secondsLeft) }
     var progress by rememberSaveable { mutableStateOf(0f) }  //[0 ; 1] [0 ; 2Pi]
 
     lastMillis = System.currentTimeMillis()
     if (isSettingTime) {
         job?.cancel()
         millisLeft = secondsInMillis
-        progress = normalize(millisLeft.toFloat(), 0f, SECONDS_LEFT.toFloat(), 0f, 1f)
+        progress = normalize(millisLeft.toFloat(), 0f, secondsLeft.toFloat(), 0f, 1f)
     } else {
         DisposableEffect(key1 = 0) {
             job = scope.launch(context = Dispatchers.Unconfined) {
@@ -121,7 +122,7 @@ fun KitchenTimer(
                         val current = System.currentTimeMillis()
                         millisLeft = (millisLeft - (current - lastMillis)).coerceAtLeast(0)
                         lastMillis = current
-                        progress = normalize(millisLeft.toFloat(), 0f, SECONDS_LEFT.toFloat(), 0f, 1f)
+                        progress = normalize(millisLeft.toFloat(), 0f, secondsLeft.toFloat(), 0f, 1f)
                         if (millisLeft <= 0L) {
                             job?.cancel()
                         }

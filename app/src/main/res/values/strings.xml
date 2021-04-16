@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Timer</string>
+    <string name="lbl_type">Check for 1 minute uncheck for 60</string>
+    <string name="lbl_tomato">🍅</string>
+    <string name="lbl_orange">🍊</string>
+    <string name="lbl_lemon">🍋</string>
 </resources>
