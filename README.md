@@ -1,4 +1,5 @@
 # Kitchen Timer
+[![Android Weekly](https://androidweekly.net/issues/issue-462/badge)](https://androidweekly.net/issues/issue-462)
 
 ## Motivation and Context
 To commemorate Jetpack Compose first beta release, Google launched the [#AndroidDevChallenge](https://developer.android.com/dev-challenge). In the 2nd round, contestants were asked to create a simple countdown app and, the idea to create a kitchen timer, popped in my head.
