@@ -1,5 +1,5 @@
 # Kitchen Timer
-[![Android Weekly](https://androidweekly.net/issues/issue-462/badge)](https://androidweekly.net/issues/issue-462) [![Featured in Compose Academy - Issue #13](https://img.shields.io/badge/Featured_in_Compose_Academy-Issue_%2313-2ea44f)](https://academy.us7.list-manage.com/track/click?u=68cc676cd60c12ff962c2f023&id=b56c081d50&e=9f80514374)
+[![Android Weekly](https://androidweekly.net/issues/issue-462/badge)](https://androidweekly.net/issues/issue-462) [![Featured in Compose Academy - Issue #13](https://img.shields.io/badge/Featured_in_Compose_Academy-Issue_%2313-2ea44f)](https://academy.us7.list-manage.com/track/click?u=68cc676cd60c12ff962c2f023&id=b56c081d50&e=9f80514374) <a href="https://jetc.dev/issues/061.html"><img src="https://img.shields.io/badge/As_Seen_In-jetc.dev_Newsletter_Issue_%2361-blue?logo=Jetpack+Compose&amp;logoColor=white" alt="As Seen In - jetc.dev Newsletter Issue #61"></a>
 
 
 
